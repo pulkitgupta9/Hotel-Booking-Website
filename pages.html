@@ -1,0 +1,98 @@
+<html lang="en" dir="'ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grey & Nebula</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images/logo.jpg" width="50" height="50" alt="">
+                <br>
+                <br>
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                  <li><a href="home.html">home</a></li>  
+                  <li><a href="room.html">rooms</a></li>
+                  <li><a href="pages.html">pages</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="news.html">news</a></li>
+                  <li><a href="contact.html">contact</a></li>
+                  <li><i class="fa fa-search"></i></li>
+                  <li><button class="primary-btn">BOOK NOW</button></li>
+                </ul>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+        </header>
+    </body>
+    
+
+<script>
+    var menulist=document.getElementById('menulist');
+    menulist.style.maxHeight="0px";
+    function menutoggle(){
+        if(menulist.style.maxHeight=="0px"){
+            menulist.style.maxHeight="100vh";
+        }
+        else{
+            menulist.style.maxHeight="0px";
+            }
+        } 
+</script>
+<section class="home">
+    <div class="content">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/p1.jpg" alt="">
+            <div class="text">
+                    <h1>Grey & Nebula London, England</h1>
+                    <p>Nestled in the heart of the vibrant city of London, G&N offers a haven of luxury and sophistication. With its prime location, just steps away from iconic landmarks like the Big Ben, Buckingham Palace, and the River Thames, our hotel provides the perfect blend of modern elegance and traditional charm. Immerse yourself in the bustling energy of the city during the day, and retreat to the tranquility of our exquisitely designed rooms and suites at night. Indulge in world-class dining, impeccable service, and breathtaking views of the city skyline. G&N is more than a hotel.</p>
+                    <div class="flex">
+                    <button class="primary-btn">Read More</button>
+                    <button class="secondary-btn">Contact Us</button>
+                    </div>
+            </div>
+            </div>
+            <div class="item">
+                <img src="images/p2.jpg" alt="">
+            <div class="text">
+                    <h1>Grey & Nebula Cairo, Egypt</h1>
+                    <p>Discover the magic of Egypt at G&N, an oasis of luxury in the midst of the enchanting landscapes of Egypt. Located near the timeless wonders of the Pyramids of Giza and the Sphinx, our hotel offers a captivating blend of modern comfort and ancient allure. Wake up to stunning views of the desert or the majestic Nile River from your well-appointed room. Immerse yourself in the rich history and culture of Egypt, and then unwind in our lavish spa or by our pristine pools. Let the warm Egyptian hospitality envelop you as you create memories that will last a lifetime.</p>
+                    <div class="flex">
+                    <button class="primary-btn">Read More</button>
+                    <button class="secondary-btn">Contact Us</button>
+                    </div>
+            </div>
+            </div>
+            <div class="item">
+                <img src="images/p3.jpg" alt="">
+            <div class="text">
+                    <h1>Grey & Nebula Kyoto, Japan</h1>
+                    <p>Experience serenity and harmony at G&N, situated in the heart of Japan's picturesque countryside. Surrounded by lush gardens, tranquil temples, and the beauty of nature, our hotel provides a serene escape from the bustling world. Immerse yourself in Japanese culture with traditional tea ceremonies, meditation sessions, and authentic kaiseki cuisine. Each room is a sanctuary of calmness, designed to reflect the essence of Japanese aesthetics. From the majestic Mount Fuji in the distance to the delicate cherry blossoms in spring, every aspect of [Hotel Name] offers a profound connection to the beauty of Japan.</p>
+                    <div class="flex">
+                    <button class="primary-btn">Read More</button>
+                    <button class="secondary-btn">Contact Us</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    responsive:{0:{items:1},768:{items:1},1000:{items:1}}})
+</script>

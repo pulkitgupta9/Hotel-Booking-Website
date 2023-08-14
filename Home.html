@@ -1,0 +1,166 @@
+<html lang="en" dir="'ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Grey & Nebula</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+        <div class="content flex_space">
+            <div class="logo">
+                <img src="images/logo.jpg" width="50" height="50" alt="">
+                <br>
+                <br>
+            </div>
+            <div class="navlinks">
+                <ul id="menulist">
+                  <li><a href="home.html">home</a></li>  
+                  <li><a href="room.html">rooms</a></li>
+                  <li><a href="pages.html">pages</a></li>
+                  <li><a href="about.html">about</a></li>
+                  <li><a href="news.html">news</a></li>
+                  <li><a href="contact.html">contact</a></li>
+                  <li><i class="fa fa-search"></i></li>
+                  <li><button class="primary-btn" onclick="mylogin()">BOOK NOW</button></li>
+                </ul>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+            </div>
+        </div>
+        </header>
+    </body>
+<script>
+    function mylogin(){
+        window.location.href="login1.php";
+    }
+</script>
+    
+
+<script>
+    var menulist=document.getElementById('menulist');
+    menulist.style.maxHeight="0px";
+    function menutoggle(){
+        if(menulist.style.maxHeight=="0px"){
+            menulist.style.maxHeight="100vh";
+        }
+        else{
+            menulist.style.maxHeight="0px";
+            }
+        } 
+</script>
+
+<section class="home">
+    <div class="content">
+        <div class="owl-carousel owl-theme">
+            <div class="item">
+                <img src="images/banner1.jpg" alt="">
+            <div class="text">
+                    <h1>Spend your holiday at one of the finest resorts in the world</h1>
+                    <p>Welcome to Grey & Nebula, where relaxation and luxury converge. Indulge in an unforgettable escape filled with breathtaking views and impeccable hospitality.</p>
+                    <div class="flex">
+                    <button class="primary-btn">Read More</button>
+                    <button class="secondary-btn">Contact Us</button>
+                    </div>
+            </div>
+            </div>
+            <div class="item">
+                <img src="images/banner2.jpg" alt="">
+            <div class="text">
+                    <h1>Spend your holiday at one of the finest resorts in the world</h1>
+                    <p>Welcome to Grey & Nebula, where relaxation and luxury converge. Indulge in an unforgettable escape filled with breathtaking views and impeccable hospitality.</p>
+                    <div class="flex">
+                    <button class="primary-btn">Read More</button>
+                    <button class="secondary-btn">Contact Us</button>
+                    </div>
+            </div>
+            </div>
+            <div class="item">
+                <img src="images/banner3.jpg" alt="">
+            <div class="text">
+                    <h1>Spend your holiday at one of the finest resorts in the world</h1>
+                    <p>Welcome to Grey & Nebula, where relaxation and luxury converge. Indulge in an unforgettable escape filled with breathtaking views and impeccable hospitality.</p>
+                    <div class="flex">
+                    <button class="primary-btn">Read More</button>
+                    <button class="secondary-btn">Contact Us</button>
+                    </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:0,
+    nav:true,
+    dots:false,
+    navText:["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"],
+    responsive:{0:{items:1},768:{items:1},1000:{items:1}}})
+</script>
+<section class="book">
+    <div class="container flex_space">
+        <div class="text">
+            <h1><span>Book</span> Your Room Today.</h1>
+        </div>
+        <div class="form">
+            <form class="grid">
+                <input type="date" placeholder="Checkin Date">
+                <input type="date" placeholder="Checkout Date">
+                <input type="number" placeholder="Adults">
+                <input type="number" placeholder="Children">
+                <input type="submit" value="CHECK AVAILIBILITY">
+            </form>
+        </div>
+    </div>
+</section>
+<section class="about top">
+    <div class="container flex">
+        <div class="left">
+            <div class="heading">
+                <h1>WELCOME</h1>
+                <h2>Grey & Nebula</h2>
+                <h2>Hotels and Resorts</h2>
+            </div>
+            <ul>
+                <li>|| Stunning Beachfront Location: Immerse yourself in the breathtaking beauty of our resort situated on a pristine white-sand beach, surrounded by crystal-clear turquoise waters, and lush tropical gardens.</li>
+                <li>|| Luxurious Accommodations: Indulge in the lap of luxury with our spacious and elegantly appointed rooms and suites, each designed to provide utmost comfort and relaxation during your stay.</li>
+                <li>|| World-Class Amenities: Enjoy a wealth of amenities including a rejuvenating spa, infinity pools overlooking the ocean, fitness center, water sports activities, and a variety of dining options to satisfy every palate.</li>
+                <li>|| Exciting Adventures: Embark on thrilling adventures with our guided tours to explore nearby attractions, go snorkeling in vibrant coral reefs, or take a sunset cruise to create unforgettable memories.</li>
+                <li>|| Unparalleled Hospitality: Our warm and attentive staff are dedicated to providing exceptional service, ensuring your every need is met, making your stay truly memorable and unforgettable.</li>
+            </ul>
+            <button class="primary-btn">ABOUT US</button>
+        </div>
+        <div class="right">
+            <img src= "images/ocean.jpg" alt="">
+        </div>
+    </div>
+</section>
+<section class="counter top">
+    <div class="container grid">
+        <div class="box">
+            <h1>25000+</h1>
+            <hr>
+            <span>Happy Customers</span>
+        </div>
+        <div class="box">
+            <h1>100+</h1>
+            <hr>
+            <span>Amenities & Services</span>
+        </div>
+        <div class="box">
+            <h1>1500</h1>
+            <hr>
+            <span>Happy Technicians</span>
+        </div>
+        <div class="box">
+            <h1>3500</h1>
+            <hr>
+            <span>Desktop</span>
+        </div>
+    </div>
+</section>
